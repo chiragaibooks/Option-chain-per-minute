@@ -4847,3 +4847,19 @@
 2026-08-18 03:43:46,883 - INFO - src.database - Option DB initialised: data/option_chain.db
 2026-08-18 03:43:46,890 - INFO - src.database - [NIFTY50] Stored 594 option rows
 2026-08-18 03:43:46,890 - INFO - __main__ - === Done ===
+2026-08-18 03:44:36,839 - INFO - __main__ - === NIFTY50 option chain fetch starting ===
+2026-08-18 03:44:37,372 - INFO - src.option_chain.nse_scraper - [get_spot] yfinance spot: 24223.85
+2026-08-18 03:44:40,136 - INFO - src.option_chain.nse_scraper - [NIFTY50] nselib expiries: ['18-Aug-2026', '25-Aug-2026', '01-Sep-2026', '08-Sep-2026']
+2026-08-18 03:44:40,136 - INFO - __main__ - Spot: 24223.85  Expiries: ['18-Aug-2026', '25-Aug-2026', '01-Sep-2026', '08-Sep-2026']
+2026-08-18 03:44:44,083 - INFO - src.option_chain.nse_scraper - [NIFTY50] nselib expiries: ['18-Aug-2026', '25-Aug-2026', '01-Sep-2026', '08-Sep-2026']
+2026-08-18 03:44:44,994 - INFO - src.option_chain.nse_scraper - [NIFTY50] v3 API expiry=18-Aug-2026 status=200 spot=24223.85 rows=105
+2026-08-18 03:44:45,912 - INFO - src.option_chain.nse_scraper - [NIFTY50] v3 API expiry=25-Aug-2026 status=200 spot=24223.85 rows=121
+2026-08-18 03:44:47,474 - INFO - src.option_chain.nse_scraper - [NIFTY50] v3 API expiry=01-Sep-2026 status=200 spot=24223.85 rows=97
+2026-08-18 03:44:48,871 - INFO - src.option_chain.nse_scraper - [NIFTY50] v3 API expiry=08-Sep-2026 status=200 spot=24223.85 rows=53
+2026-08-18 03:44:48,895 - INFO - src.option_chain.nse_scraper - [NIFTY50] Live total: 0 rows written, 752 skipped
+2026-08-18 03:44:48,896 - INFO - src.option_chain.nse_scraper - [NIFTY50] Falling back to bhav copy
+2026-08-18 03:44:48,897 - INFO - src.option_chain.nse_scraper - [NIFTY50] Trying bhav copy for 18-08-2026
+2026-08-18 03:44:49,608 - INFO - src.option_chain.nse_scraper - [NIFTY50] Trying bhav copy for 17-08-2026
+2026-08-18 03:44:50,609 - WARNING - src.option_chain.nse_scraper - [NIFTY] No bhav rows for expiry 2026-08-20
+2026-08-18 03:44:50,609 - ERROR - src.option_chain.nse_scraper - [NIFTY50] All option chain sources failed
+2026-08-18 03:44:50,612 - ERROR - __main__ - Empty option chain — aborting
