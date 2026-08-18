@@ -8191,3 +8191,7 @@
 2026-08-18 08:00:47,900 - INFO - src.database - Option DB initialised: data/option_chain.db
 2026-08-18 08:00:47,907 - INFO - src.database - [NIFTY50] Stored 538 option rows
 2026-08-18 08:00:47,907 - INFO - __main__ - === Done ===
+2026-08-18 08:01:40,258 - INFO - __main__ - === NIFTY50 option chain fetch starting ===
+2026-08-18 08:01:40,700 - WARNING - src.option_chain.nse_scraper - [get_spot] yfinance failed: Too Many Requests. Rate limited. Try after a while.
+2026-08-18 08:01:40,941 - WARNING - src.option_chain.nse_scraper - [get_spot] nselib failed: index_data() missing 1 required positional argument: 'index'
+2026-08-18 08:01:40,941 - ERROR - __main__ - Could not fetch spot price — aborting
