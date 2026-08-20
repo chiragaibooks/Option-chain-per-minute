@@ -14782,3 +14782,19 @@ KeyError: 'expiryDates'
 2026-08-20 03:44:23,709 - INFO - src.database - Option DB initialised: data/option_chain.db
 2026-08-20 03:44:23,714 - INFO - src.database - [NIFTY50] Stored 214 option rows
 2026-08-20 03:44:23,714 - INFO - __main__ - === Done ===
+2026-08-20 03:45:14,770 - INFO - __main__ - === NIFTY50 option chain fetch starting ===
+2026-08-20 03:45:15,087 - INFO - src.option_chain.nse_scraper - [get_spot] yfinance spot: 24218.20
+2026-08-20 03:45:16,905 - INFO - src.option_chain.nse_scraper - [NIFTY50] nselib expiries: ['25-Aug-2026', '01-Sep-2026', '08-Sep-2026', '15-Sep-2026']
+2026-08-20 03:45:16,905 - INFO - __main__ - Spot: 24218.20  Expiries: ['25-Aug-2026', '01-Sep-2026', '08-Sep-2026', '15-Sep-2026']
+2026-08-20 03:45:19,201 - INFO - src.option_chain.nse_scraper - [NIFTY50] nselib expiries: ['25-Aug-2026', '01-Sep-2026', '08-Sep-2026', '15-Sep-2026']
+2026-08-20 03:45:19,980 - INFO - src.option_chain.nse_scraper - [NIFTY50] v3 API expiry=25-Aug-2026 status=200 spot=24225.45 rows=121
+2026-08-20 03:45:20,644 - INFO - src.option_chain.nse_scraper - [NIFTY50] v3 API expiry=01-Sep-2026 status=200 spot=24225.45 rows=105
+2026-08-20 03:45:21,218 - INFO - src.option_chain.nse_scraper - [NIFTY50] v3 API expiry=08-Sep-2026 status=200 spot=24215.40 rows=70
+2026-08-20 03:45:21,977 - INFO - src.option_chain.nse_scraper - [NIFTY50] v3 API expiry=15-Sep-2026 status=200 spot=24215.40 rows=39
+2026-08-20 03:45:21,996 - INFO - src.option_chain.nse_scraper - [NIFTY50] Live total: 0 rows written, 670 skipped
+2026-08-20 03:45:21,998 - INFO - src.option_chain.nse_scraper - [NIFTY50] Falling back to bhav copy
+2026-08-20 03:45:21,999 - INFO - src.option_chain.nse_scraper - [NIFTY50] Trying bhav copy for 20-08-2026
+2026-08-20 03:45:22,577 - INFO - src.option_chain.nse_scraper - [NIFTY50] Trying bhav copy for 19-08-2026
+2026-08-20 03:45:23,307 - WARNING - src.option_chain.nse_scraper - [NIFTY] No bhav rows for expiry 2026-08-21
+2026-08-20 03:45:23,307 - ERROR - src.option_chain.nse_scraper - [NIFTY50] All option chain sources failed
+2026-08-20 03:45:23,310 - ERROR - __main__ - Empty option chain — aborting
