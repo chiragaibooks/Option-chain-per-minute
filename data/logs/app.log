@@ -42738,3 +42738,35 @@ KeyError: 'expiryDates'
 2026-09-07 08:41:59,676 - INFO - src.database - Option DB initialised: data/option_chain.db
 2026-09-07 08:41:59,682 - INFO - src.database - [NIFTY50] Stored 549 option rows
 2026-09-07 08:41:59,682 - INFO - __main__ - === Done ===
+2026-09-07 08:42:48,889 - INFO - __main__ - === NIFTY50 option chain fetch starting ===
+2026-09-07 08:42:49,339 - INFO - src.option_chain.nse_scraper - [get_spot] yfinance spot: 23774.65
+2026-09-07 08:42:51,016 - WARNING - src.option_chain.nse_scraper - [NIFTY50] nselib expiry fetch failed
+Traceback (most recent call last):
+  File "/home/runner/work/Option-chain-per-minute/Option-chain-per-minute/src/option_chain/nse_scraper.py", line 340, in get_expiry_dates
+    data     = derivatives.expiry_dates_option_index()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/nselib/derivatives/derivative_data.py", line 571, in expiry_dates_option_index
+    data_dict.update({ind: payload["expiryDates"]})
+                           ~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'expiryDates'
+2026-09-07 08:42:51,017 - INFO - __main__ - Spot: 23774.65  Expiries: ['10-Sep-2026', '17-Sep-2026', '24-Sep-2026', '01-Oct-2026']
+2026-09-07 08:42:52,424 - WARNING - src.option_chain.nse_scraper - [NIFTY50] nselib expiry fetch failed
+Traceback (most recent call last):
+  File "/home/runner/work/Option-chain-per-minute/Option-chain-per-minute/src/option_chain/nse_scraper.py", line 340, in get_expiry_dates
+    data     = derivatives.expiry_dates_option_index()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/nselib/derivatives/derivative_data.py", line 571, in expiry_dates_option_index
+    data_dict.update({ind: payload["expiryDates"]})
+                           ~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'expiryDates'
+2026-09-07 08:42:53,528 - INFO - src.option_chain.nse_scraper - [NIFTY50] v3 API expiry=10-Sep-2026 status=200 spot=23774.65 rows=0
+2026-09-07 08:42:54,586 - INFO - src.option_chain.nse_scraper - [NIFTY50] v3 API expiry=17-Sep-2026 status=200 spot=23774.65 rows=0
+2026-09-07 08:42:55,360 - INFO - src.option_chain.nse_scraper - [NIFTY50] v3 API expiry=24-Sep-2026 status=200 spot=23774.65 rows=0
+2026-09-07 08:42:56,174 - INFO - src.option_chain.nse_scraper - [NIFTY50] v3 API expiry=01-Oct-2026 status=200 spot=23774.65 rows=0
+2026-09-07 08:42:56,174 - INFO - src.option_chain.nse_scraper - [NIFTY50] Live total: 0 rows written, 0 skipped
+2026-09-07 08:42:56,175 - INFO - src.option_chain.nse_scraper - [NIFTY50] Falling back to bhav copy
+2026-09-07 08:42:56,176 - INFO - src.option_chain.nse_scraper - [NIFTY50] Trying bhav copy for 07-09-2026
+2026-09-07 08:42:56,962 - INFO - src.option_chain.nse_scraper - [NIFTY50] Trying bhav copy for 04-09-2026
+2026-09-07 08:42:57,544 - WARNING - src.option_chain.nse_scraper - [NIFTY] No bhav rows for expiry 2026-09-10
+2026-09-07 08:42:57,544 - ERROR - src.option_chain.nse_scraper - [NIFTY50] All option chain sources failed
+2026-09-07 08:42:57,546 - ERROR - __main__ - Empty option chain — aborting
