@@ -43186,3 +43186,16 @@ KeyError: 'expiryDates'
 2026-09-07 09:14:56,709 - INFO - src.database - Option DB initialised: data/option_chain.db
 2026-09-07 09:14:56,738 - INFO - src.database - [NIFTY50] Stored 550 option rows
 2026-09-07 09:14:56,738 - INFO - __main__ - === Done ===
+2026-09-07 09:15:48,891 - INFO - __main__ - === NIFTY50 option chain fetch starting ===
+2026-09-07 09:15:49,335 - INFO - src.option_chain.nse_scraper - [get_spot] yfinance spot: 23757.50
+2026-09-07 09:15:51,428 - INFO - src.option_chain.nse_scraper - [NIFTY50] nselib expiries: ['08-Sep-2026', '15-Sep-2026', '22-Sep-2026', '29-Sep-2026']
+2026-09-07 09:15:51,428 - INFO - __main__ - Spot: 23757.50  Expiries: ['08-Sep-2026', '15-Sep-2026', '22-Sep-2026', '29-Sep-2026']
+2026-09-07 09:15:53,200 - INFO - src.option_chain.nse_scraper - [NIFTY50] nselib expiries: ['08-Sep-2026', '15-Sep-2026', '22-Sep-2026', '29-Sep-2026']
+2026-09-07 09:15:53,858 - INFO - src.option_chain.nse_scraper - [NIFTY50] v3 API expiry=08-Sep-2026 status=200 spot=23758.35 rows=87
+2026-09-07 09:15:54,716 - INFO - src.option_chain.nse_scraper - [NIFTY50] v3 API expiry=15-Sep-2026 status=200 spot=23758.35 rows=83
+2026-09-07 09:15:55,712 - INFO - src.option_chain.nse_scraper - [NIFTY50] v3 API expiry=22-Sep-2026 status=200 spot=23758.35 rows=81
+2026-09-07 09:15:56,985 - INFO - src.option_chain.nse_scraper - [NIFTY50] v3 API expiry=29-Sep-2026 status=200 spot=23756.20 rows=123
+2026-09-07 09:15:57,031 - INFO - src.option_chain.nse_scraper - [NIFTY50] Live total: 550 rows written, 198 skipped
+2026-09-07 09:15:57,035 - INFO - src.database - Option DB initialised: data/option_chain.db
+2026-09-07 09:15:57,060 - INFO - src.database - [NIFTY50] Stored 550 option rows
+2026-09-07 09:15:57,060 - INFO - __main__ - === Done ===
