@@ -44161,3 +44161,24 @@ KeyError: 'expiryDates'
 2026-09-08 08:50:02,908 - INFO - src.database - Option DB initialised: data/option_chain.db
 2026-09-08 08:50:02,914 - INFO - src.database - [NIFTY50] Stored 563 option rows
 2026-09-08 08:50:02,914 - INFO - __main__ - === Done ===
+2026-09-08 08:50:54,391 - INFO - __main__ - === NIFTY50 option chain fetch starting ===
+2026-09-08 08:50:54,827 - INFO - src.option_chain.nse_scraper - [get_spot] yfinance spot: 23654.30
+2026-09-08 08:50:56,332 - WARNING - src.option_chain.nse_scraper - [NIFTY50] nselib expiry fetch failed
+Traceback (most recent call last):
+  File "/home/runner/work/Option-chain-per-minute/Option-chain-per-minute/src/option_chain/nse_scraper.py", line 340, in get_expiry_dates
+    data     = derivatives.expiry_dates_option_index()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/nselib/derivatives/derivative_data.py", line 571, in expiry_dates_option_index
+    data_dict.update({ind: payload["expiryDates"]})
+                           ~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'expiryDates'
+2026-09-08 08:50:56,333 - INFO - __main__ - Spot: 23654.30  Expiries: ['10-Sep-2026', '17-Sep-2026', '24-Sep-2026', '01-Oct-2026']
+2026-09-08 08:50:58,589 - INFO - src.option_chain.nse_scraper - [NIFTY50] nselib expiries: ['08-Sep-2026', '15-Sep-2026', '22-Sep-2026', '29-Sep-2026']
+2026-09-08 08:50:59,109 - INFO - src.option_chain.nse_scraper - [NIFTY50] v3 API expiry=08-Sep-2026 status=200 spot=23652.90 rows=88
+2026-09-08 08:50:59,967 - INFO - src.option_chain.nse_scraper - [NIFTY50] v3 API expiry=15-Sep-2026 status=200 spot=23655.30 rows=84
+2026-09-08 08:51:00,761 - INFO - src.option_chain.nse_scraper - [NIFTY50] v3 API expiry=22-Sep-2026 status=200 spot=23654.75 rows=82
+2026-09-08 08:51:01,603 - INFO - src.option_chain.nse_scraper - [NIFTY50] v3 API expiry=29-Sep-2026 status=200 spot=23655.30 rows=123
+2026-09-08 08:51:01,708 - INFO - src.option_chain.nse_scraper - [NIFTY50] Live total: 563 rows written, 191 skipped
+2026-09-08 08:51:01,713 - INFO - src.database - Option DB initialised: data/option_chain.db
+2026-09-08 08:51:01,721 - INFO - src.database - [NIFTY50] Stored 563 option rows
+2026-09-08 08:51:01,721 - INFO - __main__ - === Done ===
